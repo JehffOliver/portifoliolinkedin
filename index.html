@@ -64,7 +64,8 @@
         </div>
       </div>
 
-      <section class="section about-me" data-section="section1">
+      <!-- Seção Sobre Mim -->
+      <section id="section1" class="section about-me" data-section="section1">
         <div class="container">
           <div class="left-image-post">
             <div class="row">
@@ -73,6 +74,7 @@
                   <img src="assets/images/left-image.jpg" alt="Jefferson Oliveira Araujo" />
                 </div>
               </div>
+              <br/>
               <div class="col-md-6">
                 <div class="right-text">
                   <h4>Minha Jornada</h4>
@@ -112,33 +114,32 @@
           <h2>Sobre Mim</h2>
           <div class="line-dec"></div>
           <span>
-          <p>Olá, sou Jefferson Oliveira Araujo – 
-            um profissional de TI com mais de 5 anos de experiência atuando em 
-            ambientes técnicos desafiadores. Ao longo da minha carreira, tive a oportunidade de desenvolver 
-            soluções robustas e inovadoras nas áreas de análise e administração de bancos de dados, 
-            gerenciamento de infraestrutura, automação e práticas DevOps, além do desenvolvimento de aplicações 
-            web modernas.</p>
+            <p>Olá, sou Jefferson Oliveira Araujo – 
+              um profissional de TI com mais de 5 anos de experiência atuando em 
+              ambientes técnicos desafiadores. Ao longo da minha carreira, tive a oportunidade de desenvolver 
+              soluções robustas e inovadoras nas áreas de análise e administração de bancos de dados, 
+              gerenciamento de infraestrutura, automação e práticas DevOps, além do desenvolvimento de aplicações 
+              web modernas.</p>
 
-          <p>Minha trajetória é marcada pela busca constante por eficiência e pela atualização contínua nas 
-            últimas tecnologias. Trabalho com foco na resolução de problemas e na criação de sistemas escaláveis 
-            e seguros. Estou sempre em processo de aprendizado para integrar as melhores práticas do mercado e, 
-            assim, entregar resultados que agreguem valor aos projetos.</p>
-          
-          <p>Seja qual for o desafio – desde a otimização de sistemas e bancos de dados até a implantação de 
-            soluções automatizadas e o desenvolvimento de interfaces web dinâmicas – estou preparado para 
-            contribuir com a excelência técnica e a versatilidade que seu projeto precisa.</p>
-        </span>
+            <p>Minha trajetória é marcada pela busca constante por eficiência e pela atualização contínua nas 
+              últimas tecnologias. Trabalho com foco na resolução de problemas e na criação de sistemas escaláveis 
+              e seguros. Estou sempre em processo de aprendizado para integrar as melhores práticas do mercado e, 
+              assim, entregar resultados que agreguem valor aos projetos.</p>
+            
+            <p>Seja qual for o desafio – desde a otimização de sistemas e bancos de dados até a implantação de 
+              soluções automatizadas e o desenvolvimento de interfaces web dinâmicas – estou preparado para 
+              contribuir com a excelência técnica e a versatilidade que seu projeto precisa.</p>
+          </span>
         </div>
       </section>
 
-      <section class="section my-services" data-section="section2">
+      <!-- Seção Habilidades -->
+      <section id="section2" class="section my-services" data-section="section2">
         <div class="container">
           <div class="section-heading">
             <h2>Habilidades</h2>
             <div class="line-dec"></div>
-            <span
-              >Minhas principais competências técnicas e comportamentais.</span
-            >
+            <span>Minhas principais competências técnicas e comportamentais.</span>
           </div>
           <div class="row">
             <div class="col-md-6">
@@ -181,66 +182,49 @@
         </div>
       </section>
 
-      <section class="section my-work" data-section="section3">
+      <!-- Seção Experiências -->
+      <section id="section3" class="section my-work" data-section="section3">
         <div class="container">
           <div class="section-heading">
             <h2>Experiências</h2>
             <div class="line-dec"></div>
-            <span
-              >Minha trajetória profissional em empresas de tecnologia.</span
-            >
+            <span>Minha trajetória profissional em empresas de tecnologia.</span>
           </div>
           <div class="row">
             <div class="isotope-wrapper">
               <form class="isotope-toolbar">
-                <label
-                  ><input
-                    type="radio"
-                    data-type="*"
-                    checked=""
-                    name="isotope-filter"
-                  />
-                  <span>Todas</span></label
-                >
-                <label
-                  ><input
-                    type="radio"
-                    data-type="suporte"
-                    name="isotope-filter"
-                  />
-                  <span>Suporte</span></label
-                >
-                <label
-                  ><input
-                    type="radio"
-                    data-type="infraestrutura"
-                    name="isotope-filter"
-                  />
-                  <span>Infraestrutura</span></label
-                >
-                <label
-                  ><input
-                    type="radio"
-                    data-type="agil"
-                    name="isotope-filter"
-                  />
-                  <span>Ágil</span></label
-                >
+                <label>
+                  <input type="radio" data-type="*" checked="" name="isotope-filter" />
+                  <span>Todas</span>
+                </label>
+                <label>
+                  <input type="radio" data-type="suporte" name="isotope-filter" />
+                  <span>Suporte</span>
+                </label>
+                <label>
+                  <input type="radio" data-type="infraestrutura" name="isotope-filter" />
+                  <span>Infraestrutura</span>
+                </label>
+                <label>
+                  <input type="radio" data-type="agil" name="isotope-filter" />
+                  <span>Ágil</span>
+                </label>
               </form>
               <div class="isotope-box">
                 <div class="isotope-item" data-type="suporte">
                   <figure class="snip1321">
                     <img 
-                    src="assets/images/portfolio-01.jpg" 
-                    alt="Samsung Electronics" 
-                    style="width: 400px; height: 250px; object-fit: cover;" />
+                      src="assets/images/portfolio-01.jpg" 
+                      alt="Samsung Electronics" 
+                      style="width: 400px; height: 250px; object-fit: cover;" />
                     <figcaption>
                       <a
                         href="assets/images/portfolio-01.jpg"
                         data-lightbox="image-1"
                         data-title="Samsung Electronics"
-                        ><i class="fa fa-search"></i
-                      ></a>
+                      >
+                        <i class="fa fa-search"></i>
+                      </a>
                       <h4>Samsung Electronics</h4>
                       <span>Analista de Suporte ao Usuário</span>
                     </figcaption>
@@ -250,16 +234,17 @@
                 <div class="isotope-item" data-type="infraestrutura">
                   <figure class="snip1321">
                     <img 
-                    src="assets/images/portfolio-02.jpg" 
-                    alt="CloudData" 
-                    style="width: 400px; height: 250px; object-fit: cover;" />
+                      src="assets/images/portfolio-02.jpg" 
+                      alt="CloudData" 
+                      style="width: 400px; height: 250px; object-fit: cover;" />
                     <figcaption>
                       <a
                         href="assets/images/portfolio-02.jpg"
                         data-lightbox="image-1"
                         data-title="CloudData"
-                        ><i class="fa fa-search"></i
-                      ></a>
+                      >
+                        <i class="fa fa-search"></i>
+                      </a>
                       <h4>CloudData</h4>
                       <span>Analista de Infraestrutura de TI</span>
                     </figcaption>
@@ -269,16 +254,17 @@
                 <div class="isotope-item" data-type="suporte">
                   <figure class="snip1321">
                     <img 
-                    src="assets/images/portfolio-03.jpg" 
-                    alt="Stefanini Brasil" 
-                    style="width: 400px; height: 250px; object-fit: cover;" />
+                      src="assets/images/portfolio-03.jpg" 
+                      alt="Stefanini Brasil" 
+                      style="width: 400px; height: 250px; object-fit: cover;" />
                     <figcaption>
                       <a
                         href="assets/images/portfolio-03.jpg"
                         data-lightbox="image-1"
                         data-title="Stefanini Brasil"
-                        ><i class="fa fa-search"></i
-                      ></a>
+                      >
+                        <i class="fa fa-search"></i>
+                      </a>
                       <h4>Stefanini Brasil</h4>
                       <span>Field Support Analyst</span>
                     </figcaption>
@@ -288,26 +274,30 @@
                 <div class="isotope-item" data-type="agil">
                   <figure class="snip1321">
                     <img 
-                    src="assets/images/portfolio-04.jpg" 
-                    alt="Scrum Master" 
-                    style="width: 400px; height: 250px; object-fit: cover;" />
+                      src="assets/images/portfolio-04.jpg" 
+                      alt="Scrum Master" 
+                      style="width: 400px; height: 250px; object-fit: cover;" />
                     <figcaption>
                       <a
                         href="assets/images/portfolio-04.jpg"
                         data-lightbox="image-1"
                         data-title="Scrum Master"
-                        ><i class="fa fa-search"></i
-                      ></a>
+                      >
+                        <i class="fa fa-search"></i>
+                      </a>
                       <h4>Transição para Scrum Master</h4>
                       <span>Em busca de novas oportunidades</span>
                     </figcaption>
                   </figure>
                 </div>
               </div>
-              
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section class="section contact-me" data-section="section4">
+      <!-- Seção Contato -->
+      <section id="section4" class="section contact-me" data-section="section4">
         <div class="container">
           <div class="section-heading">
             <h2>Contato</h2>

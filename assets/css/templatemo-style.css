@@ -72,6 +72,7 @@ html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -214,6 +215,11 @@ html {
 
 .menu {
     text-align: center;
+}
+
+.menu {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer e Edge antigo */
 }
 
 .menu::-webkit-scrollbar {
