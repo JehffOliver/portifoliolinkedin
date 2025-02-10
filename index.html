@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="assets/css/templatemo-style.css" />
     <link rel="stylesheet" href="assets/css/owl.css" />
     <link rel="stylesheet" href="assets/css/lightbox.css" />
+    </style>
   </head>
 
   <body>
@@ -48,7 +49,7 @@
               </ul>
             </nav>
             <div class="social-network">
-              <ul class="soial-icons">
+              <ul class="social-icons">
                 <li>
                   <a href="https://www.linkedin.com/in/jehff" target="_blank"><i class="fa fa-linkedin"></i></a>
                 </li>
@@ -58,12 +59,20 @@
               </ul>
             </div>
             <div class="copyright-text">
-              <p>Copyright 2023 Jefferson Oliveira Araujo</p>
+              <p>Jefferson Oliveira Araujo<br></br>
+              Copyright 2025</p> 
             </div>
           </div>
         </div>
       </div>
-
+      <br/>
+      <br/>
+      <br/>
+      <div class="box-1 text-center">
+        <a href="assets/Curriculo Jefferson.pdf" download class="btn btn-one">
+          <span>Download do Currículo</span>
+        </a>
+      </div>
       <!-- Seção Sobre Mim -->
       <section id="section1" class="section about-me" data-section="section1">
         <div class="container">
@@ -74,7 +83,7 @@
                   <img src="assets/images/left-image.jpg" alt="Jefferson Oliveira Araujo" />
                 </div>
               </div>
-              <br/>
+              
               <div class="col-md-6">
                 <div class="right-text">
                   <h4>Minha Jornada</h4>
@@ -380,5 +389,16 @@
     <script src="assets/js/owl-carousel.js"></script>
     <script src="assets/js/lightbox.js"></script>
     <script src="assets/js/custom.js"></script>
+
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+    </script>
   </body>
 </html>
