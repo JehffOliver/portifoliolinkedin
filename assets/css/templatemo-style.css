@@ -1,80 +1,95 @@
-/* ===== PREMIUM UPGRADE ===== */
-.premium-hero .hero-box {
-  background: rgba(0, 0, 0, 0.45);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 14px;
-  padding: 40px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+/* ===== HOTFIX LAYOUT BUG (imagem 4) ===== */
+html, body {
+  font-size: 16px !important;
+  zoom: 1 !important;
 }
 
-.premium-hero h1 {
-  font-size: 42px;
-  font-weight: 900;
-  margin-bottom: 10px;
+#page-wraper {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.section {
+  font-size: 16px !important;
+  line-height: 1.6 !important;
+}
+
+.section p,
+.section span,
+.section li,
+.section a {
+  font-size: 16px !important;
+}
+
+.section h1 { font-size: 42px !important; line-height: 1.2 !important; }
+.section h2 { font-size: 32px !important; line-height: 1.25 !important; }
+.section h3 { font-size: 26px !important; }
+.section h4 { font-size: 22px !important; }
+
+.menu,
+.menu * {
+  font-size: 16px !important;
+}
+
+.main-nav li a {
+  font-size: 16px !important;
+}
+
+.author-content h4 {
+  font-size: 24px !important;
+}
+
+.author-content span {
+  font-size: 14px !important;
+}
+
+.hero-box,
+.premium-hero .hero-box {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto 30px auto;
+  box-sizing: border-box;
+  padding: 32px !important;
+  border-radius: 12px;
+  background: rgba(0,0,0,.45);
 }
 
 .hero-subtitle {
-  font-size: 16px;
-  opacity: 0.9;
-  margin-bottom: 24px;
+  font-size: 17px !important;
+  margin-bottom: 20px;
 }
 
 .hero-buttons {
-  margin-top: 28px;
   display: flex;
-  gap: 12px;
   flex-wrap: wrap;
-}
-
-.btn-outline-light {
-  border: 1px solid #fff;
-  color: #fff;
-  padding: 12px 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 12px;
-  transition: 0.3s;
-}
-.btn-outline-light:hover {
-  background: #fff;
-  color: #a43f49;
+  gap: 12px;
 }
 
 .timeline {
-  display: grid;
-  gap: 18px;
+  display: block !important;
 }
 
 .timeline-item {
-  background: rgba(250, 250, 250, 0.08);
+  margin-bottom: 16px;
+  padding: 20px;
   border-left: 4px solid #a43f49;
+  background: rgba(250,250,250,.08);
   border-radius: 8px;
-  padding: 22px 20px;
-  transition: 0.3s;
 }
 
-.timeline-item:hover {
-  background: rgba(250, 250, 250, 0.16);
-  transform: translateY(-2px);
-}
+@media (max-width: 845px) {
+  .section {
+    width: 94% !important;
+    left: 3% !important;
+    right: 3% !important;
+  }
 
-.timeline-item h4 {
-  margin: 0 0 8px 0;
-}
-
-.timeline-item h5 {
-  margin: 0 0 10px 0;
-  font-size: 14px;
-  color: #f4d5d8;
-  font-weight: 700;
-}
-
-@media screen and (max-width: 845px) {
+  .hero-box,
   .premium-hero .hero-box {
-    padding: 24px;
+    padding: 20px !important;
   }
 
-  .premium-hero h1 {
-    font-size: 30px;
-  }
+  .section h1 { font-size: 30px !important; }
+  .section h2 { font-size: 26px !important; }
+  .section h4 { font-size: 20px !important; }
 }

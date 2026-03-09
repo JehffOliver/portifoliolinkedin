@@ -15,36 +15,32 @@
     });
   }
 
-  $(window).on("resize", function() {
-    if ($(window).width() < 846) {
-      $(".main-menu a").off("click").on("click", function() {
-        if (menu) menu.classList.remove("open");
-      });
+  $(".main-menu a").on("click", function() {
+    if ($(window).width() < 846 && menu) {
+      menu.classList.remove("open");
     }
   });
 
-  $(".hover").mouseleave(function() {
-    $(this).removeClass("hover");
-  });
+  if ($(".isotope-wrapper").length && $.fn.isotope) {
+    $(".isotope-wrapper").each(function() {
+      var $isotope = $(".isotope-box", this);
+      var $filterCheckboxes = $('input[type="radio"]', this);
 
-  $(".isotope-wrapper").each(function() {
-    var $isotope = $(".isotope-box", this);
-    var $filterCheckboxes = $('input[type="radio"]', this);
+      var filter = function() {
+        var type = $filterCheckboxes.filter(":checked").data("type") || "*";
+        if (type !== "*") type = '[data-type="' + type + '"]';
+        $isotope.isotope({ filter: type });
+      };
 
-    var filter = function() {
-      var type = $filterCheckboxes.filter(":checked").data("type") || "*";
-      if (type !== "*") type = '[data-type="' + type + '"]';
-      $isotope.isotope({ filter: type });
-    };
+      $isotope.isotope({
+        itemSelector: ".isotope-item",
+        layoutMode: "masonry"
+      });
 
-    $isotope.isotope({
-      itemSelector: ".isotope-item",
-      layoutMode: "masonry"
+      $(this).on("change", filter);
+      filter();
     });
-
-    $(this).on("change", filter);
-    filter();
-  });
+  }
 
   if (typeof lightbox !== "undefined") {
     lightbox.option({
