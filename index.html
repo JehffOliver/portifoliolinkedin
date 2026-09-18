@@ -3,106 +3,99 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Jefferson de Oliveira | Analista de Sistemas Sênior | ERP TOTVS, Infraestrutura, SQL e Azure" />
-  <title>Jefferson de Oliveira | Portfólio Profissional</title>
-
+  <meta name="description" content="Portfólio de Jefferson de Oliveira Araujo — Analista de Sistemas Sênior especializado em TOTVS RM, SQL Server, Python, Cloud e Infraestrutura." />
+  <meta name="theme-color" content="#070a0f" />
+  <title>Jefferson Oliveira — Sistemas, automação e infraestrutura</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23070a0f'/%3E%3Cpath d='M20 19 9 32l11 13M44 19l11 13-11 13M37 13 27 51' fill='none' stroke='%237cfcba' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
   <link rel="stylesheet" href="assets/css/professional.css" />
 </head>
 <body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="ambient ambient-one" aria-hidden="true"></div><div class="ambient ambient-two" aria-hidden="true"></div>
   <header class="topbar">
     <div class="container nav">
-      <a href="#inicio" class="logo">Jefferson de Oliveira</a>
-      <button id="menuBtn" class="menu-btn">☰</button>
-      <nav id="menu" class="menu">
-        <a href="#inicio">Resumo</a>
-        <a href="#competencias">Competências</a>
-        <a href="#experiencia">Experiência</a>
-        <a href="#formacao">Formação</a>
-        <a href="#contato">Contato</a>
+      <a href="#inicio" class="logo" aria-label="Jefferson Oliveira — início"><span class="logo-mark">&lt;J/&gt;</span><span>Jefferson Oliveira</span></a>
+      <button id="menuBtn" class="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu"><span></span><span></span></button>
+      <nav id="menu" class="menu" aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a><a href="#projetos">Projetos</a><a href="#experiencia">Experiência</a><a href="#stack">Stack</a><a class="nav-cta" href="#contato">Contato <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
   </header>
-
-  <main id="inicio">
-    <section class="hero container">
-      <div class="hero-text">
-        <h1>Analista de Sistemas Sênior</h1>
-        <p class="subtitle">ERP TOTVS (RM/Protheus) • Sustentação de Ambientes Críticos • SQL Server/MySQL • Azure</p>
-        <p>
-          Profissional com mais de <strong>6 anos de experiência em TI</strong>, atuando em suporte, infraestrutura,
-          ERP e banco de dados. Forte atuação em diagnóstico e resolução de incidentes, gestão por SLA,
-          estabilidade operacional e integração entre áreas técnicas e de negócio.
-        </p>
-        <div class="actions">
-          <a class="btn primary" href="assets/Curriculo Jefferson.pdf" download>Download do Currículo</a>
-          <a class="btn ghost" href="#contato">Fale comigo</a>
+  <main id="conteudo">
+    <section id="inicio" class="hero container">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> São Paulo · Brasil</p>
+        <h1>Eu conecto <span>tecnologia</span> ao que o negócio precisa.</h1>
+        <p class="hero-role">Analista de Sistemas Sênior <span>//</span> ERP · Dados · Automação · Infra</p>
+        <p class="hero-intro">Há mais de 7 anos transformando operações complexas em ambientes estáveis, dados confiáveis e aplicações internas que resolvem problemas reais — do TOTVS RM ao Python, do SQL Server à cloud.</p>
+        <div class="actions"><a class="btn primary" href="#projetos">Explorar projetos <span aria-hidden="true">→</span></a><a class="btn ghost" href="assets/curriculo-jefferson-oliveira-araujo.pdf" download>Baixar currículo <span aria-hidden="true">↓</span></a></div>
+        <div class="hero-metrics" aria-label="Destaques profissionais"><div><strong>7+</strong><span>anos em TI</span></div><div><strong>3</strong><span>frentes: ERP, Dev e Infra</span></div><div><strong>360°</strong><span>visão técnica e de negócio</span></div></div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="code-window">
+          <div class="window-bar"><div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div><span>jefferson.profile.ts</span><span>01</span></div>
+          <div class="photo-wrap"><img src="assets/images/author-image.jpg" alt="Retrato de Jefferson de Oliveira" /><div class="photo-overlay"></div><div class="availability"><span></span> aberto a oportunidades</div></div>
+          <div class="code-snippet"><p><em>const</em> profissional = {</p><p>&nbsp;&nbsp;foco: <b>'soluções que escalam'</b>,</p><p>&nbsp;&nbsp;mindset: <b>'resolver → evoluir'</b></p><p>};</p></div>
+        </div>
+        <div class="floating-tag tag-one">Python</div><div class="floating-tag tag-two">SQL Server</div>
+      </div>
+    </section>
+    <div class="ticker" aria-label="Principais tecnologias"><div class="ticker-track"><span>TOTVS RM</span><i>◆</i><span>PYTHON</span><i>◆</i><span>SQL SERVER</span><i>◆</i><span>FASTAPI</span><i>◆</i><span>DOCKER</span><i>◆</i><span>POWER BI</span><i>◆</i><span>AZURE</span><i>◆</i><span>WINDOWS / LINUX</span></div></div>
+    <section id="sobre" class="section container">
+      <div class="section-heading reveal"><p class="section-index">01 / SOBRE</p><h2>Entre o código e a operação.</h2><p>Meu diferencial é enxergar o processo inteiro — entender a regra de negócio, diagnosticar a causa e entregar uma solução sustentável.</p></div>
+      <div class="bento-grid">
+        <article class="bento bento-main reveal"><span class="card-kicker">PERFIL</span><h3>Especialista generalista.</h3><p>Atuo na sustentação e evolução de sistemas corporativos, com profundidade em TOTVS RM e experiência prática construindo automações, APIs e aplicações web internas.</p><div class="terminal-line"><span>jefferson@portfolio:~$</span> foco --em resultado<span class="cursor">_</span></div></article>
+        <article class="bento reveal"><span class="card-number">7+</span><h3>Anos de experiência</h3><p>De suporte técnico a sistemas sênior, com repertório construído em operações críticas.</p></article>
+        <article class="bento reveal"><span class="card-icon">⌁</span><h3>Ponta a ponta</h3><p>Negócio, ERP, banco, aplicação, servidor, rede e usuário final no mesmo mapa mental.</p></article>
+        <article class="bento bento-wide reveal"><span class="card-kicker">MÉTODO DE TRABALHO</span><div class="process"><div><b>01</b><span>Entender</span><small>processo e impacto</small></div><i>→</i><div><b>02</b><span>Diagnosticar</span><small>dados e causa raiz</small></div><i>→</i><div><b>03</b><span>Construir</span><small>solução segura</small></div><i>→</i><div><b>04</b><span>Evoluir</span><small>medir e melhorar</small></div></div></article>
+      </div>
+    </section>
+    <section id="projetos" class="section container">
+      <div class="section-heading reveal"><p class="section-index">02 / PROJETOS</p><h2>Soluções que saíram do papel.</h2><p>Aplicações internas pensadas para reduzir retrabalho, aumentar rastreabilidade e transformar dados em decisão.</p></div>
+      <div class="projects-grid">
+        <article class="project-card featured reveal"><div class="project-top"><span class="project-id">PROJ_01</span><span class="project-status">● desenvolvido</span></div><div><p class="project-type">OPERAÇÕES · AUTOMAÇÃO</p><h3>Conferência de Expedição</h3><p>Aplicação com leitura de QR Codes e controle por viagem, caminhão, produto e lote. Gera arquivos Excel e foi preparada para integração com notas fiscais da IBAP.</p></div><ul class="tags"><li>Python</li><li>QR Code</li><li>openpyxl</li><li>Web</li></ul><span class="project-arrow" aria-hidden="true">↗</span></article>
+        <article class="project-card reveal"><div class="project-top"><span class="project-id">PROJ_02</span><span class="project-status">● corporativo</span></div><div><p class="project-type">DADOS · INTEGRAÇÕES</p><h3>Auditoria &amp; Bloco K</h3><p>Soluções para auditoria de RH/Starsoft, conciliação do Bloco K IBAP, consulta comercial e indicadores de vendas.</p></div><ul class="tags"><li>FastAPI</li><li>SQL Server</li><li>Python</li><li>Git</li></ul><span class="project-arrow" aria-hidden="true">↗</span></article>
+        <article class="project-card reveal"><div class="project-top"><span class="project-id">PROJ_03</span><span class="project-status">● infraestrutura</span></div><div><p class="project-type">CLOUD · DEVOPS</p><h3>Plataforma em Containers</h3><p>VM Ubuntu estruturada no Hyper-V com Docker e Portainer para hospedar e disponibilizar aplicações corporativas via web.</p></div><ul class="tags"><li>Ubuntu</li><li>Docker</li><li>Portainer</li><li>Hyper-V</li></ul><span class="project-arrow" aria-hidden="true">↗</span></article>
+      </div>
+    </section>
+    <section id="experiencia" class="section container">
+      <div class="section-heading reveal"><p class="section-index">03 / TRAJETÓRIA</p><h2>Experiência construída em campo.</h2></div>
+      <div class="experience-layout">
+        <div class="experience-intro reveal"><p>Uma evolução consistente por suporte, infraestrutura e sistemas — sempre perto da operação.</p><a href="assets/curriculo-jefferson-oliveira-araujo.pdf" target="_blank" rel="noopener">Currículo completo <span aria-hidden="true">↗</span></a></div>
+        <div class="timeline">
+          <article class="timeline-item current reveal"><div class="timeline-date">2025 — 2026</div><div><p class="company">GOLPACK EMBALAGENS</p><h3>Analista de Sistemas Sênior</h3><p>Administração e evolução do TOTVS RM e Starsoft; Reforma Tributária CBS/IBS; obrigações fiscais e trabalhistas; SQL Server, Power BI, aplicações Python/FastAPI e infraestrutura.</p><ul class="tags"><li>TOTVS RM</li><li>Python</li><li>SQL Server</li><li>Power BI</li></ul></div></article>
+          <article class="timeline-item reveal"><div class="timeline-date">2024 — 2025</div><div><p class="company">NOVIGO</p><h3>Analista de TI Pleno</h3><p>Implantação de infraestrutura de lojas, redes, Linux, suporte a técnicos de campo e análise operacional em MySQL.</p></div></article>
+          <article class="timeline-item reveal"><div class="timeline-date">2023 — 2024</div><div><p class="company">STEFANINI</p><h3>Analista de Field Service Pleno</h3><p>Suporte remoto e presencial em ambiente fabril, gestão de chamados e manutenção de sistemas e equipamentos.</p></div></article>
+          <article class="timeline-item reveal"><div class="timeline-date">2021 — 2023</div><div><p class="company">CLOUDDATA</p><h3>Analista de Infraestrutura de TI</h3><p>Incidentes em ERP, migrações, documentação e suporte a sistemas e infraestrutura do chão de fábrica.</p></div></article>
+          <article class="timeline-item reveal"><div class="timeline-date">2018 — 2020</div><div><p class="company">SAMSUNG · DELL</p><h3>Analista de Suporte</h3><p>Diagnóstico de hardware e software, reparos, atendimento técnico e gestão de filas de chamados.</p></div></article>
         </div>
       </div>
-      <div class="hero-photo">
-        <img src="assets/images/author-image.jpg" alt="Jefferson de Oliveira" />
-      </div>
     </section>
-
-    <section id="competencias" class="section container">
-      <h2>Competências-Chave</h2>
-      <div class="grid">
-        <article class="card"><h3>Service Desk & ITSM</h3><p>Jira, Delta, ServiceNow, SmartTicket, Zendesk, gestão de chamados e SLA.</p></article>
-        <article class="card"><h3>ERP & Sistemas</h3><p>TOTVS RM, Protheus, Datasul, Iniflex, StarSoft, SAP.</p></article>
-        <article class="card"><h3>Infraestrutura</h3><p>Windows Server, Linux, Azure, redes, switches, firewalls e roteadores.</p></article>
-        <article class="card"><h3>Dados & Dev</h3><p>SQL Server, MySQL, Power BI, C#, .NET, Python, JavaScript, APIs.</p></article>
+    <section id="stack" class="section container">
+      <div class="section-heading reveal"><p class="section-index">04 / STACK</p><h2>Ferramentas são meios.<br />Resolver é o objetivo.</h2></div>
+      <div class="stack-grid">
+        <article class="stack-card reveal"><span>01</span><h3>ERP &amp; Negócio</h3><p>TOTVS RM Backoffice e Labore, Starsoft, TSS, TAF, NF-e, eSocial, EFD-Reinf, CBS/IBS e Bloco K.</p></article>
+        <article class="stack-card reveal"><span>02</span><h3>Dados &amp; BI</h3><p>SQL Server, T-SQL, MySQL, dicionário de dados, consultas, correções controladas e Power BI.</p></article>
+        <article class="stack-card reveal"><span>03</span><h3>Desenvolvimento</h3><p>Python, FastAPI, JavaScript ES6, HTML/CSS, APIs REST, Git/GitHub, openpyxl, C# e .NET.</p></article>
+        <article class="stack-card reveal"><span>04</span><h3>Infra &amp; Cloud</h3><p>Windows Server, Linux/Ubuntu, Azure, Docker, Portainer, Hyper-V, pfSense, OpenVPN e Office 365.</p></article>
       </div>
+      <div class="education reveal"><div><p class="section-index">FORMAÇÃO</p><h3>Aprendizado contínuo, base sólida.</h3></div><div class="education-list"><div><span>2026</span><p><strong>Pós-graduação em Cloud Computing</strong><small>Formação concluída</small></p></div><div><span>2025</span><p><strong>Análise e Desenvolvimento de Sistemas</strong><small>Graduação concluída</small></p></div><div><span>2021</span><p><strong>Sistemas de Informação</strong><small>Graduação concluída</small></p></div></div></div>
     </section>
-
-    <section id="experiencia" class="section container">
-      <h2>Experiência Profissional</h2>
-      <div class="timeline">
-        <div class="item"><h3>Golpack Embalagens</h3><p class="meta">Analista de Sistemas Sênior • Set/2025 – Jan/2026</p><p>Suporte sistêmico, ERP TOTVS/StarSoft, Power BI e SQL Server.</p></div>
-        <div class="item"><h3>Novigo</h3><p class="meta">Analista de T.I Pleno • Jun/2024 – Set/2025</p><p>Redes, suporte técnico, Linux/MySQL e relatórios no Power BI Planner.</p></div>
-        <div class="item"><h3>Stefanini Brasil</h3><p class="meta">Analista de Field Service Pleno • Set/2023 – Jun/2024</p><p>Chamados, suporte remoto/presencial, SLA e dados em MySQL.</p></div>
-        <div class="item"><h3>CloudData</h3><p class="meta">Analista de Infraestrutura de TI • Abr/2021 – Jun/2023</p><p>ERP TOTVS Protheus, migrações, módulos fiscal/financeiro e SQL/MySQL.</p></div>
-      </div>
-    </section>
-
-    <section id="formacao" class="section container">
-      <h2>Formação & Certificações</h2>
-      <div class="card">
-        <h3>Bacharelado em Análise e Desenvolvimento de Sistemas</h3>
-        <p>Conclusão: 2025</p>
-        <p><strong>Cursos:</strong> ITIL v3 Foundation, POO (C#), Lógica e Algoritmos, Redes, Office 365, MySQL, SQL Server.</p>
-        <p><strong>Idiomas:</strong> Português (Nativo) • Inglês (Técnico)</p>
-      </div>
-    </section>
-
-    <section id="contato" class="section container">
-      <h2>Contato</h2>
-      <form class="contact" action="https://formspree.io/f/mrbekjjy" method="POST">
-        <input type="text" name="name" placeholder="Seu nome..." required />
-        <input type="email" name="email" placeholder="Seu e-mail..." required />
-        <input type="text" name="subject" placeholder="Assunto..." required />
-        <textarea name="message" rows="6" placeholder="Sua mensagem..." required></textarea>
-        <button type="submit" class="btn primary">Enviar Mensagem</button>
-      </form>
+    <section id="contato" class="section contact-section container">
+      <div class="contact-copy reveal"><p class="section-index">05 / CONTATO</p><h2>Vamos resolver o próximo desafio?</h2><p>Se você procura alguém que conversa com o negócio, entende a operação e entrega tecnologia de verdade, vamos conversar.</p><div class="contact-links"><a href="mailto:jehff.aral@hotmail.com">jehff.aral@hotmail.com <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/jehff" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://github.com/JehffOliver" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a></div></div>
+      <form class="contact-form reveal" action="https://formspree.io/f/mrbekjjy" method="POST"><div class="field-row"><label>Seu nome<input type="text" name="name" autocomplete="name" placeholder="Como posso te chamar?" required /></label><label>Seu e-mail<input type="email" name="email" autocomplete="email" placeholder="voce@empresa.com" required /></label></div><label>Assunto<input type="text" name="subject" placeholder="Sobre o que vamos conversar?" required /></label><label>Mensagem<textarea name="message" rows="5" placeholder="Conte um pouco sobre o desafio..." required></textarea></label><button type="submit" class="btn primary">Enviar mensagem <span aria-hidden="true">↗</span></button></form>
     </section>
   </main>
-
+  <footer class="footer"><div class="container"><a href="#inicio" class="logo"><span class="logo-mark">&lt;J/&gt;</span></a><p>Projetado com intenção. Construído para resolver.</p><a href="#inicio">Voltar ao topo ↑</a></div></footer>
   <script>
-    const menuBtn = document.getElementById('menuBtn');
-    const menu = document.getElementById('menu');
-    menuBtn.addEventListener('click', () => menu.classList.toggle('open'));
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', e => {
-        const id = a.getAttribute('href');
-        const el = document.querySelector(id);
-        if (el) {
-          e.preventDefault();
-          el.scrollIntoView({ behavior: 'smooth' });
-          menu.classList.remove('open');
-        }
-      });
-    });
+    const menuBtn=document.getElementById('menuBtn'),menu=document.getElementById('menu');
+    menuBtn.addEventListener('click',()=>{const open=menu.classList.toggle('open');menuBtn.classList.toggle('active',open);menuBtn.setAttribute('aria-expanded',String(open));menuBtn.setAttribute('aria-label',open?'Fechar menu':'Abrir menu')});
+    document.querySelectorAll('a[href^="#"]').forEach(link=>link.addEventListener('click',event=>{const target=document.querySelector(link.getAttribute('href'));if(!target)return;event.preventDefault();target.scrollIntoView({behavior:'smooth',block:'start'});menu.classList.remove('open');menuBtn.classList.remove('active');menuBtn.setAttribute('aria-expanded','false')}));
+    const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');revealObserver.unobserve(entry.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(element=>revealObserver.observe(element));
+    const navLinks=[...document.querySelectorAll('.menu a[href^="#"]')];const activeObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting)navLinks.forEach(link=>link.classList.toggle('active-link',link.getAttribute('href')===`#${entry.target.id}`))}),{rootMargin:'-35% 0px -55%'});document.querySelectorAll('main section[id]').forEach(section=>activeObserver.observe(section));
   </script>
 </body>
 </html>
