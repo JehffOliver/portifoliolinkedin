@@ -1,0 +1,89 @@
+/* ============================================================
+   Enhancements — melhorias visuais e de conteúdo (set/2026)
+   Carregado DEPOIS de professional.css; apenas sobrescritas e
+   componentes novos.
+   ============================================================ */
+
+/* ---------- Scroll progress bar ---------- */
+.scroll-progress{position:fixed;top:0;left:0;z-index:200;width:0;height:2px;background:linear-gradient(90deg,var(--green),var(--blue));box-shadow:0 0 12px rgba(124,252,186,.5)}
+
+/* ---------- Hero: foto mais nítida e snippet legível ---------- */
+.photo-wrap img{filter:saturate(.92) contrast(1.05) brightness(1.12)}
+.photo-overlay{background:linear-gradient(to top,rgba(7,10,15,.55),transparent 32%)}
+.code-snippet{color:#9fb0bf;font-size:12.5px;background:#080d14;border-top:1px solid var(--line)}
+.code-snippet b{color:#8fffc8}
+.code-snippet em{color:#d0a4ff}
+
+/* ---------- Botão WhatsApp ---------- */
+.btn.whats{color:#d9ffe9;background:rgba(37,211,102,.08);border-color:rgba(37,211,102,.35)}
+.btn.whats:hover{border-color:rgba(37,211,102,.7);background:rgba(37,211,102,.14)}
+.btn.whats svg{width:17px;height:17px;fill:#25d366}
+
+/* ---------- Faixa de destaque: Reforma Tributária ---------- */
+.highlight-banner{position:relative;overflow:hidden;margin-top:14px;padding:26px 30px;border:1px solid rgba(124,252,186,.28);border-radius:16px;background:linear-gradient(100deg,rgba(124,252,186,.09),rgba(99,169,255,.07) 55%,rgba(124,252,186,.05));display:grid;grid-template-columns:auto 1fr auto;gap:26px;align-items:center}
+.highlight-banner:before{content:'';position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:30px 30px;mask-image:linear-gradient(to right,#000,transparent 80%)}
+.highlight-badge{display:grid;place-items:center;width:58px;height:58px;border:1px solid rgba(124,252,186,.4);border-radius:14px;background:rgba(124,252,186,.1);color:var(--green);font:700 13px var(--mono);letter-spacing:.02em;box-shadow:0 0 30px rgba(124,252,186,.12)}
+.highlight-banner h3{margin:0 0 6px;font-size:clamp(19px,2vw,24px);letter-spacing:-.02em}
+.highlight-banner p{margin:0;max-width:760px;color:var(--muted);font-size:14.5px}
+.highlight-banner p b{color:#cfe8d8;font-weight:600}
+.highlight-tag{position:relative;z-index:1;padding:8px 13px;border:1px solid rgba(124,252,186,.4);border-radius:999px;color:var(--green);font:11px var(--mono);letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;background:rgba(7,10,15,.4)}
+
+/* ---------- Mock visual do app no card featured ---------- */
+.app-mock{position:relative;z-index:1;margin:26px 0 4px;border:1px solid rgba(255,255,255,.14);border-radius:12px;background:#080d14;box-shadow:0 18px 50px rgba(0,0,0,.4)}
+.app-mock-bar{display:flex;align-items:center;gap:8px;padding:10px 14px;border-bottom:1px solid var(--line);color:#677484;font:10.5px var(--mono)}
+.app-mock-bar i{width:7px;height:7px;border-radius:50%;background:#ff6b68}
+.app-mock-bar i:nth-child(2){background:#ffca5b}
+.app-mock-bar i:nth-child(3){background:#57cf72}
+.app-mock-bar span{margin-left:6px}
+.app-mock-body{display:grid;grid-template-columns:96px 1fr;gap:16px;padding:16px}
+.qr-mock{display:grid;grid-template-columns:repeat(7,1fr);gap:2.5px;width:96px;height:96px;padding:8px;border:1px solid rgba(124,252,186,.3);border-radius:9px;background:#0b1219}
+.qr-mock i{border-radius:1.5px;background:rgba(124,252,186,.14)}
+.qr-mock i.on{background:var(--green);box-shadow:0 0 6px rgba(124,252,186,.5)}
+.scan-list{display:grid;gap:7px;align-content:start}
+.scan-list div{display:flex;justify-content:space-between;gap:10px;padding:7px 10px;border:1px solid var(--line);border-radius:7px;background:rgba(255,255,255,.02);font:10.5px var(--mono);color:#8b98a6}
+.scan-list div b{color:#d5dee7;font-weight:500}
+.scan-list .ok{color:var(--green)}
+.scan-list .wait{color:#ffca5b}
+.scan-progress{height:5px;margin-top:2px;border-radius:99px;background:rgba(255,255,255,.07);overflow:hidden}
+.scan-progress i{display:block;width:68%;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--green),var(--blue))}
+
+/* ---------- Timeline com marcadores ---------- */
+.timeline{position:relative;border-top:1px solid var(--line)}
+.timeline:before{content:'';position:absolute;left:5px;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,var(--green),rgba(124,252,186,.12) 30%,rgba(255,255,255,.06))}
+.timeline-item{position:relative;padding-left:34px}
+.timeline-item:before{content:'';position:absolute;left:0;top:38px;width:11px;height:11px;border-radius:50%;border:2px solid #33404d;background:var(--bg);transition:border-color .25s,box-shadow .25s}
+.timeline-item:hover:before{border-color:var(--green)}
+.timeline-item.current:before{border-color:var(--green);background:var(--green);box-shadow:0 0 14px rgba(124,252,186,.6)}
+
+/* ---------- Cursos, ferramentas e idiomas ---------- */
+.extras{display:grid;grid-template-columns:1.3fr .7fr;gap:14px;margin-top:14px}
+.extra-card{padding:26px 28px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,rgba(255,255,255,.03),rgba(255,255,255,.01))}
+.extra-card h3{margin:0 0 16px;font-size:19px;letter-spacing:-.02em}
+.extra-card h3 span{color:var(--green);font:12px var(--mono);letter-spacing:.1em;display:block;margin-bottom:8px}
+.chip-cloud{display:flex;flex-wrap:wrap;gap:8px}
+.chip-cloud li{padding:7px 12px;border:1px solid var(--line);border-radius:999px;color:#a9b6c2;background:rgba(7,10,15,.35);font:12px var(--sans);list-style:none;transition:border-color .2s,color .2s}
+.chip-cloud li:hover{border-color:rgba(124,252,186,.4);color:#e8f5ec}
+.lang-row{display:grid;gap:14px}
+.lang-row>div{display:grid;gap:6px}
+.lang-row p{display:flex;justify-content:space-between;margin:0;font-size:14px}
+.lang-row p span{color:var(--muted);font:11px var(--mono)}
+.lang-bar{height:5px;border-radius:99px;background:rgba(255,255,255,.07);overflow:hidden}
+.lang-bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--green),var(--blue))}
+
+/* ---------- Contato: linha de WhatsApp ---------- */
+.contact-links a .contact-hint{color:#5f6c79;font-size:11px}
+
+/* ---------- Responsivo ---------- */
+@media(max-width:980px){
+  .highlight-banner{grid-template-columns:auto 1fr}
+  .highlight-tag{display:none}
+  .extras{grid-template-columns:1fr}
+}
+@media(max-width:760px){
+  .highlight-banner{grid-template-columns:1fr;padding:22px}
+  .app-mock-body{grid-template-columns:1fr}
+  .qr-mock{margin:auto}
+  .timeline:before{left:4px}
+  .timeline-item{padding-left:26px}
+  .timeline-item:before{top:8px;width:9px;height:9px}
+}

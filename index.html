@@ -11,8 +11,10 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23070a0f'/%3E%3Cpath d='M20 19 9 32l11 13M44 19l11 13-11 13M37 13 27 51' fill='none' stroke='%237cfcba' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
   <link rel="stylesheet" href="assets/css/professional.css" />
+  <link rel="stylesheet" href="assets/css/enhancements.css" />
 </head>
 <body>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
   <div class="ambient ambient-one" aria-hidden="true"></div><div class="ambient ambient-two" aria-hidden="true"></div>
   <header class="topbar">
@@ -29,9 +31,9 @@
       <div class="hero-copy reveal">
         <p class="eyebrow"><span class="status-dot"></span> São Paulo · Brasil</p>
         <h1>Eu conecto <span>tecnologia</span> ao que o negócio precisa.</h1>
-        <p class="hero-role">Analista de Sistemas Sênior <span>//</span> ERP · Dados · Automação · Infra</p>
+        <p class="hero-role">Analista de Sistemas Sênior <span>//</span> ERP TOTVS RM · SQL Server · Cloud &amp; Infraestrutura</p>
         <p class="hero-intro">Há mais de 7 anos transformando operações complexas em ambientes estáveis, dados confiáveis e aplicações internas que resolvem problemas reais — do TOTVS RM ao Python, do SQL Server à cloud.</p>
-        <div class="actions"><a class="btn primary" href="#projetos">Explorar projetos <span aria-hidden="true">→</span></a><a class="btn ghost" href="assets/curriculo-jefferson-oliveira-araujo.pdf" download>Baixar currículo <span aria-hidden="true">↓</span></a></div>
+        <div class="actions"><a class="btn primary" href="#projetos">Explorar projetos <span aria-hidden="true">→</span></a><a class="btn ghost" href="assets/curriculo-jefferson-oliveira-araujo.pdf" download>Baixar currículo <span aria-hidden="true">↓</span></a><a class="btn whats" href="https://wa.me/5511983662125" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.1-.7l.4-.5c.1-.2.1-.3 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.9 2.9 4.6 4 .6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.6-.3z"/></svg> WhatsApp</a></div>
         <div class="hero-metrics" aria-label="Destaques profissionais"><div><strong>7+</strong><span>anos em TI</span></div><div><strong>3</strong><span>frentes: ERP, Dev e Infra</span></div><div><strong>360°</strong><span>visão técnica e de negócio</span></div></div>
       </div>
       <div class="hero-visual reveal">
@@ -44,6 +46,16 @@
       </div>
     </section>
     <div class="ticker" aria-label="Principais tecnologias"><div class="ticker-track"><span>TOTVS RM</span><i>◆</i><span>PYTHON</span><i>◆</i><span>SQL SERVER</span><i>◆</i><span>FASTAPI</span><i>◆</i><span>DOCKER</span><i>◆</i><span>POWER BI</span><i>◆</i><span>AZURE</span><i>◆</i><span>WINDOWS / LINUX</span></div></div>
+    <div class="container">
+      <aside class="highlight-banner reveal" aria-label="Destaque atual">
+        <div class="highlight-badge" aria-hidden="true">CBS<br />IBS</div>
+        <div>
+          <h3>Frente atual: Reforma Tributária no TOTVS RM</h3>
+          <p>Implantação e homologação da <b>CBS/IBS</b> — regras tributárias, fórmulas de cálculo, períodos de apuração, validação de XML e testes integrados com <b>Fiscal, Financeiro e Faturamento</b>.</p>
+        </div>
+        <span class="highlight-tag">2025 — 2026 · em produção</span>
+      </aside>
+    </div>
     <section id="sobre" class="section container">
       <div class="section-heading reveal"><p class="section-index">01 / SOBRE</p><h2>Entre o código e a operação.</h2><p>Meu diferencial é enxergar o processo inteiro — entender a regra de negócio, diagnosticar a causa e entregar uma solução sustentável.</p></div>
       <div class="bento-grid">
@@ -56,7 +68,7 @@
     <section id="projetos" class="section container">
       <div class="section-heading reveal"><p class="section-index">02 / PROJETOS</p><h2>Soluções que saíram do papel.</h2><p>Aplicações internas pensadas para reduzir retrabalho, aumentar rastreabilidade e transformar dados em decisão.</p></div>
       <div class="projects-grid">
-        <article class="project-card featured reveal"><div class="project-top"><span class="project-id">PROJ_01</span><span class="project-status">● desenvolvido</span></div><div><p class="project-type">OPERAÇÕES · AUTOMAÇÃO</p><h3>Conferência de Expedição</h3><p>Aplicação com leitura de QR Codes e controle por viagem, caminhão, produto e lote. Gera arquivos Excel e foi preparada para integração com notas fiscais da IBAP.</p></div><ul class="tags"><li>Python</li><li>QR Code</li><li>openpyxl</li><li>Web</li></ul><span class="project-arrow" aria-hidden="true">↗</span></article>
+        <article class="project-card featured reveal"><div class="project-top"><span class="project-id">PROJ_01</span><span class="project-status">● desenvolvido</span></div><div><p class="project-type">OPERAÇÕES · AUTOMAÇÃO</p><h3>Conferência de Expedição</h3><p>Aplicação com leitura de QR Codes e controle por viagem, caminhão, produto e lote. Gera arquivos Excel e foi preparada para integração com notas fiscais da IBAP.</p></div><div class="app-mock" aria-hidden="true"><div class="app-mock-bar"><i></i><i></i><i></i><span>expedicao.app — viagem 0412</span></div><div class="app-mock-body"><div class="qr-mock"><i class="on"></i><i class="on"></i><i></i><i class="on"></i><i></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i class="on"></i><i></i><i class="on"></i><i></i><i class="on"></i><i></i><i class="on"></i><i class="on"></i><i></i><i class="on"></i><i class="on"></i><i></i><i class="on"></i><i></i><i class="on"></i><i class="on"></i><i></i><i class="on"></i><i></i><i class="on"></i><i class="on"></i><i></i><i></i><i class="on"></i><i></i><i class="on"></i><i class="on"></i><i></i><i class="on"></i><i></i><i class="on"></i><i class="on"></i><i></i><i class="on"></i><i class="on"></i><i></i><i class="on"></i><i class="on"></i></div><div class="scan-list"><div><b>LOTE A-2210</b><span class="ok">✓ conferido</span></div><div><b>LOTE A-2211</b><span class="ok">✓ conferido</span></div><div><b>LOTE B-0098</b><span class="ok">✓ conferido</span></div><div><b>LOTE B-0102</b><span class="wait">… aguardando</span></div><div class="scan-progress"><i></i></div></div></div></div><ul class="tags"><li>Python</li><li>QR Code</li><li>openpyxl</li><li>Web</li></ul><span class="project-arrow" aria-hidden="true">↗</span></article>
         <article class="project-card reveal"><div class="project-top"><span class="project-id">PROJ_02</span><span class="project-status">● corporativo</span></div><div><p class="project-type">DADOS · INTEGRAÇÕES</p><h3>Auditoria &amp; Bloco K</h3><p>Soluções para auditoria de RH/Starsoft, conciliação do Bloco K IBAP, consulta comercial e indicadores de vendas.</p></div><ul class="tags"><li>FastAPI</li><li>SQL Server</li><li>Python</li><li>Git</li></ul><span class="project-arrow" aria-hidden="true">↗</span></article>
         <article class="project-card reveal"><div class="project-top"><span class="project-id">PROJ_03</span><span class="project-status">● infraestrutura</span></div><div><p class="project-type">CLOUD · DEVOPS</p><h3>Plataforma em Containers</h3><p>VM Ubuntu estruturada no Hyper-V com Docker e Portainer para hospedar e disponibilizar aplicações corporativas via web.</p></div><ul class="tags"><li>Ubuntu</li><li>Docker</li><li>Portainer</li><li>Hyper-V</li></ul><span class="project-arrow" aria-hidden="true">↗</span></article>
       </div>
@@ -83,9 +95,13 @@
         <article class="stack-card reveal"><span>04</span><h3>Infra &amp; Cloud</h3><p>Windows Server, Linux/Ubuntu, Azure, Docker, Portainer, Hyper-V, pfSense, OpenVPN e Office 365.</p></article>
       </div>
       <div class="education reveal"><div><p class="section-index">FORMAÇÃO</p><h3>Aprendizado contínuo, base sólida.</h3></div><div class="education-list"><div><span>2026</span><p><strong>Pós-graduação em Cloud Computing</strong><small>Formação concluída</small></p></div><div><span>2025</span><p><strong>Análise e Desenvolvimento de Sistemas</strong><small>Graduação concluída</small></p></div><div><span>2021</span><p><strong>Sistemas de Informação</strong><small>Graduação concluída</small></p></div></div></div>
+      <div class="extras">
+        <article class="extra-card reveal"><h3><span>CURSOS &amp; FERRAMENTAS</span>Certificações e dia a dia.</h3><ul class="chip-cloud"><li>ITIL v3 Foundation</li><li>POO com C#</li><li>Lógica de Programação</li><li>Redes de Computadores</li><li>Office 365 Avançado</li><li>MySQL</li><li>Jira</li><li>ServiceNow</li><li>Zendesk</li><li>SmartTicket</li><li>MS Planner</li></ul></article>
+        <article class="extra-card reveal"><h3><span>IDIOMAS</span>Comunicação.</h3><div class="lang-row"><div><p>Português <span>nativo</span></p><div class="lang-bar"><i style="width:100%"></i></div></div><div><p>Inglês <span>técnico</span></p><div class="lang-bar"><i style="width:62%"></i></div></div></div></article>
+      </div>
     </section>
     <section id="contato" class="section contact-section container">
-      <div class="contact-copy reveal"><p class="section-index">05 / CONTATO</p><h2>Vamos resolver o próximo desafio?</h2><p>Se você procura alguém que conversa com o negócio, entende a operação e entrega tecnologia de verdade, vamos conversar.</p><div class="contact-links"><a href="mailto:jehff.aral@hotmail.com">jehff.aral@hotmail.com <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/jehff" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://github.com/JehffOliver" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a></div></div>
+      <div class="contact-copy reveal"><p class="section-index">05 / CONTATO</p><h2>Vamos resolver o próximo desafio?</h2><p>Se você procura alguém que conversa com o negócio, entende a operação e entrega tecnologia de verdade, vamos conversar.</p><div class="contact-links"><a href="mailto:jehff.aral@hotmail.com">jehff.aral@hotmail.com <span aria-hidden="true">↗</span></a><a href="https://wa.me/5511983662125" target="_blank" rel="noopener">WhatsApp <span class="contact-hint">(11) 98366-2125</span> <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/jehff" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://github.com/JehffOliver" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a></div></div>
       <form class="contact-form reveal" action="https://formspree.io/f/mrbekjjy" method="POST"><div class="field-row"><label>Seu nome<input type="text" name="name" autocomplete="name" placeholder="Como posso te chamar?" required /></label><label>Seu e-mail<input type="email" name="email" autocomplete="email" placeholder="voce@empresa.com" required /></label></div><label>Assunto<input type="text" name="subject" placeholder="Sobre o que vamos conversar?" required /></label><label>Mensagem<textarea name="message" rows="5" placeholder="Conte um pouco sobre o desafio..." required></textarea></label><button type="submit" class="btn primary">Enviar mensagem <span aria-hidden="true">↗</span></button></form>
     </section>
   </main>
@@ -96,6 +112,7 @@
     document.querySelectorAll('a[href^="#"]').forEach(link=>link.addEventListener('click',event=>{const target=document.querySelector(link.getAttribute('href'));if(!target)return;event.preventDefault();target.scrollIntoView({behavior:'smooth',block:'start'});menu.classList.remove('open');menuBtn.classList.remove('active');menuBtn.setAttribute('aria-expanded','false')}));
     const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');revealObserver.unobserve(entry.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(element=>revealObserver.observe(element));
     const navLinks=[...document.querySelectorAll('.menu a[href^="#"]')];const activeObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting)navLinks.forEach(link=>link.classList.toggle('active-link',link.getAttribute('href')===`#${entry.target.id}`))}),{rootMargin:'-35% 0px -55%'});document.querySelectorAll('main section[id]').forEach(section=>activeObserver.observe(section));
+    const scrollProgress=document.getElementById('scrollProgress');const updateProgress=()=>{const max=document.documentElement.scrollHeight-innerHeight;scrollProgress.style.width=(max>0?(scrollY/max)*100:0)+'%'};addEventListener('scroll',updateProgress,{passive:true});updateProgress();
   </script>
 </body>
 </html>
